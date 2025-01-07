@@ -165,7 +165,7 @@ const Product = () => {
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
               {/* Section Title */}
               <div className="section-tittle text-center mb-80">
-                <h2>Product</h2>
+                <h2>Our Product</h2>
               </div>
             </div>
           </div>
