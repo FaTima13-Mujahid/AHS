@@ -8,10 +8,7 @@ import Footer from './Components/Footer'
 // import Pages
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
-import Events from './Pages/Events'
-import Blog from './Pages/Blog'
-import Blogdetail from './Pages/Blogdetail'
-import Element from "./Pages/Element";
+
 // --- Error Page : when the url does'nt match with routes
 import ErrorPage from './Pages/Errorpage'
 import About from './Pages/About'
@@ -65,11 +62,8 @@ const App = () => {
         <Route path="/Product" element={<Product />} />
 
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Element" element={<Element />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/Blogdetail" element={<Blogdetail />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Events" element={<Events />} />
+     
+
       
         <Route path="/About" element={<About />} />
         <Route path="/Hotrolled" element={<Hotrolled />} />

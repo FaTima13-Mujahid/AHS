@@ -60,14 +60,14 @@ const Product = () => {
     },
      {
       image: "https://supremepipe.com/wp-content/uploads/2020/12/Corrosion-Resistance.jpg",
-       title: "GI Pipe",
+       title: "GI Pipe ",
       description: "In the early 20th century, galvanized piping replaced cast iron and lead in cold-water plumbing systems. Over time, this type of piping deteriorates from the inside out, accumulating deposits or plaques that can lead to reduced water pressure and eventual pipe failure",
       links: "/Gpipe"
    
     },
        {
       image: "https://www.poscogroup.com/wp-content/uploads/elementor/thumbs/Tin-Plate-Coil-Stock-5-pwocrc7qj33yydhszfsk5yg97q548grruadkqrg4bk.jpg",
-       title: "Tin Plate Coils & Sheet",
+       title: "Tin Plate Coils & Sheets",
       description: "Mill products include electrolytic tinplate, electrolytic chromium coated steel (also referred to as tin-free steel or TFS), and black plate, the uncoated steel. About 90% of tin mill products made in the world are used by the container industry in the manufacture of cans, ends, and closures for the food and beverage industry. ",
       links: "/TinPlate"
    
