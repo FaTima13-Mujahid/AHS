@@ -36,13 +36,20 @@ const Footer = () => {
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>Contact Info</h4>
-                                    <ul>
-                                        <li>
-                                            <p>Address :Your address goes here, your demo address.</p>
-                                        </li>
-                                        <li><a href="#">Phone : +92 331 3711376</a></li>
-                                        <li><a href="#">Email :  ahs@gmail.com</a></li>
-                                    </ul>
+                                  <ul>
+  <li>
+    <p>
+      Address: 4, CP & Berar Society BMCHS Sharafabad, Karachi, Karachi City, Sindh, Pakistan
+    </p>
+  </li>
+  <li>
+    <a href="tel:+923313711376">Phone: +92 331 3711376</a>
+  </li>
+  <li>
+    <a href="mailto:ahs@gmail.com">Email: ahs@gmail.com</a>
+  </li>
+</ul>
+
                                 </div>
 
                             </div>
@@ -66,7 +73,7 @@ const Footer = () => {
                                 <div class="footer-tittle">
                                     <h4>Newsletter</h4>
                                     <div class="footer-pera footer-pera2">
-                                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
+                                    <p>Pioneering Innovation in Steel Manufacturing.</p>
                                 </div>
                                 {/* <!-- Form --> */}
                                 <div class="footer-form" >

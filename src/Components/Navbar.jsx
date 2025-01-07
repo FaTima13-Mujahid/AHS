@@ -11,95 +11,14 @@ const Navbar = () => {
   };
   return (
     <>
-<div className="container-fluid">
-  <div className="row d-flex justify-content-between align-items-center">
-    <div className="header-info-left d-flex align-items-center">
-      {/* Phone */}
-      <ul className="d-flex m-0 p-0">
-        <li className="mr-3">Phone: +92 331 3711376</li>
-        <li className="mr-3">|</li> {/* Pipe separator */}
-        <li className="mr-3">Email: ahs@gmail.com</li>
-      </ul>
 
-      {/* Social Icons */}
-      <div className="header-social d-flex ml-3">
-        <ul className="d-flex m-0 p-0">
-          <li className="mr-3">
-            <a
-              href="https://www.linkedin.com/company/alhadeedsteel/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in" style={{ color: "#0077B5" }}></i>
-            </a>
-          </li>
-          <li className="mr-3">
-            <a
-              href="https://www.instagram.com/alhadeedsteel?igsh=MWlscmx1dnJqOWI0bA=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram" style={{ color: "#E1306C" }}></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="header-info-right d-flex align-items-center">
-      {/* Language Selection Dropdown */}
-      <div className="language-dropdown mr-3">
-        <form action="#">
-          <div className="select-items">
-            <select
-              name="select"
-              id="select1"
-              className="language-select"
-              style={{
-                backgroundColor: "#000",
-                color: "#fff",
-                border: "1px solid #fff",
-              }}
-            >
-              <option value="">English</option>
-              <option value="">Bangla</option>
-              <option value="">Arabic</option>
-              <option value="">Hindi</option>
-            </select>
-          </div>
-        </form>
-      </div>
-
-      {/* Pipe separator */}
-      <div className="separator" style={{ margin: "0 10px", color: "#fff" }}>|</div>
-
-      {/* Subscribe Button */}
-      <ul className="contact-now ml-3">
-        <li>
-          <a
-            href="#"
-            className="subscribe"
-            style={{
-              color: "#fff",
-              backgroundColor: "#444", // Dark button background
-              padding: "5px 10px",
-              borderRadius: "5px",
-            }}
-          >
-            Subscribe Now
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{
   backgroundColor: "#000", // Navbar background
   color: "#fff", // Font color
 }}>
   {/* Logo */}
-  <a className="navbar-brand" href="/">
+  <Link className="navbar-brand" to="/">
     <img
       src={logo} // Replace 'logo' with your actual logo import
       alt="Logo"
@@ -108,7 +27,7 @@ const Navbar = () => {
         height: "auto",
       }}
     />
-  </a>
+  </Link>
   <button
     className="navbar-toggler"
     type="button"
@@ -122,9 +41,9 @@ const Navbar = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav" style={{ marginRight: "auto", marginLeft: "auto" }}>
-      <a className="nav-item nav-link active" href="#" style={{ marginRight: "20px" }}>
+      <Link className="nav-item nav-link active" to="/" style={{ marginRight: "20px" }}>
         Home <span className="sr-only">(current)</span>
-      </a>
+      </Link>
      
       <Link className="nav-item nav-link" to="Product" style={{ marginRight: "20px" }}>
         Product

@@ -55,7 +55,7 @@ const Contact = () => {
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
               {/* Section Title */}
               <div className="section-tittle text-center mb-80">
-                <h2>About Us</h2>
+                <h2>Contact Us</h2>
               </div>
             </div>
           </div>
@@ -71,11 +71,14 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2 className="contact-title">Get in Touch</h2>
+             
             </div>
 
-             <div className="col-lg-2"></div>
+             <div className="col-lg-2">
+              
+             </div>
             <div className="col-lg-8">
+               <h2 className="contact-title">Get in Touch</h2>
               <form
                 className="form-contact contact_form"
                 onSubmit={handleSubmit}
@@ -158,9 +161,9 @@ const Contact = () => {
 
               <div className="card" style={{
                   position: 'absolute',
-                  top: '200%',
+                  top: '100px',
                   left: '10%',
-                  backgroundColor: "rgba(39, 39, 39,0.7)",
+                  backgroundColor: "rgba(67, 39, 39,2)",
                   zIndex: 1,
                   backgroundColor: 'white',
                   color: '#fff',

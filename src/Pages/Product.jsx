@@ -60,7 +60,7 @@ const Product = () => {
     },
      {
       image: "https://supremepipe.com/wp-content/uploads/2020/12/Corrosion-Resistance.jpg",
-       title: "G1 Pipe",
+       title: "GI Pipe",
       description: "In the early 20th century, galvanized piping replaced cast iron and lead in cold-water plumbing systems. Over time, this type of piping deteriorates from the inside out, accumulating deposits or plaques that can lead to reduced water pressure and eventual pipe failure",
       links: "/Gpipe"
    

@@ -2977,7 +2977,7 @@ hr {
 .section-tittle h2 {
   font-size: 42px;
   display: block;
-  color: #58585c;
+  color: #2f2e2e;
   font-weight: 800;
   text-transform: capitalize;
   line-height: 1.4;
@@ -4769,7 +4769,7 @@ hr {
 
 /* line 17, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_footer.scss */
 .footer-area .footer-tittle ul li a:hover {
-  color: #09cc7f;
+  color: #e3dfdf;
   padding-left: 5px;
 }
 

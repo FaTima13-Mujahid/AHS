@@ -17,7 +17,7 @@ const Hotrolled = () => {
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
               {/* Section Title */}
               <div className="section-tittle text-left mb-80">
-                <h2>We arrange many </h2>
+                <h2>Hot Rolled Coils & Sheet</h2>
               </div>
             </div>
           </div>
