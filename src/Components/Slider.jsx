@@ -9,7 +9,7 @@ const CustomSlider = () => {
   // Array of image data
   const images = [
     {
-      url: "http://www.globuslogisys.in/wp-content/uploads/2018/08/cropped-warehouse-management.jpg",
+      url: "https://plus.unsplash.com/premium_photo-1661963247622-be10e1ea2c25?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "The Backbone of Industry, The Heart of Innovation.",
       subtitle: "Effortlessly manage and store your data with MongoDB Atlas",
     },
