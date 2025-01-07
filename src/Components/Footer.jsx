@@ -1,5 +1,7 @@
 import React from 'react'
 import img1 from '../img/gallery/footer_bg.png'
+import { Link } from 'react-router-dom'
+import logo from "../img/logo/logo.jpeg";
 const Footer = () => {
   return (
     <>
@@ -15,8 +17,17 @@ const Footer = () => {
                             <div class="single-footer-caption mb-30">
                                 <div class="footer-tittle">
                                     <div class="footer-logo mb-20">
-                                        {/* <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt="" /></a> */}
-                                    </div>
+                                       <a className="navbar-brand" href="/">
+    <img
+      src={logo} // Replace 'logo' with your actual logo import
+      alt="Logo"
+      style={{
+        marginTop:"60px",
+        width: "150px", // Adjust logo size if needed
+        height: "auto",
+      }}
+    />
+  </a>    </div>
                                 </div>
                             </div>
                         </div>
@@ -41,11 +52,11 @@ const Footer = () => {
                                 <div class="footer-tittle">
                                     <h4>Important Link</h4>
                                     <ul>
-                                        <li><a href="#"> View Project</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Testimonial</a></li>
-                                        <li><a href="#">Proparties</a></li>
-                                        <li><a href="#">Support</a></li>
+                                        <li><Link to="About">About Us</Link></li>
+                                        <li><Link to="contact">Contact Us</Link></li>
+                                        <li><Link to="Product">Products</Link></li>
+                                        <li><Link to="Standard">Standard</Link></li>
+                                        <li><Link to="Calculator">Calculator</Link></li>
                                     </ul>
                                 </div>
                             </div>
