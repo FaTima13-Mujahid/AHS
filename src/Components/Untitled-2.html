@@ -1,0 +1,75 @@
+  <div id="leftcol"><!-- InstanceBeginEditable name="LeftCol" --><h1>Steel Weight Calculator</h1>
+					<div class="pricing">
+          <form id="calculator" name="calculator" method="post" action="">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="13%">Material</td>
+                <td width="87%"><select name="material" id="material" onChange="calculate()">
+                  <option value="0">Mild Steel</option>
+                  <option value="1">Cast Iron</option>
+                  <option value="2">Aluminium</option>
+                  <option value="3">Acetal</option>
+                </select> 
+                Select from <a href="structuralsteel/index.html">mild steel</a>, <a href="cast-iron-bar/cast-iron.html">cast iron</a> or <a href="non-ferrous/aluminium.html">Aluminium</a>. Also Acetal copolymer/homopolymer.<br/>
+                Note: Typical/average density values are used</td>
+              </tr>
+              <tr>
+                <td>Form</td>
+                <td><select name="shape" id="shape" onchange="calculate()">
+                  <option value="0">round bar</option>
+                  <option value="1">Square bar</option>
+                  <option value="2" selected="selected">Rectangular bar</option>
+                  <option value="2">Sheet/plate</option>
+                  <option value="3">Hex bar</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td id="wd">Width</td>
+                <td><input name="width" type="text" id="width" value="0" size="6" maxlength="6" onBlur="calculate()"/> <select name="unitsw" id="unitsw" onChange="calculate()">
+                  <option value="mm">mm</option>
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                  <option value="in">in</option>
+                  <option value="ft">ft</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td id="dp">Depth</td>
+                <td><input name="depth" type="text" id="depth" value="0" size="6" maxlength="6" onblur="calculate()"/> <select name="unitsd" id="unitsd" onChange="calculate()">
+                  <option value="mm">mm</option>
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                  <option value="in">in</option>
+                  <option value="ft">ft</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td id="ln">Length</td>
+                <td><input name="length" type="text" id="length" value="0" size="6" maxlength="6" onblur="calculate()"/> <select name="unitsl" id="unitsl" onchange="calculate()">
+                  <option value="mm">mm</option>
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                  <option value="in">in</option>
+                  <option value="ft">ft</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td><input type="button" name="calc" id="calc" value="Calculate" onClick="calculate()"/></td>
+              </tr>
+              <tr>
+                <td><strong>Weight (kg)</strong></td>
+                <td>
+                <p class="result"><span id="wkg">0</span> kg</p></td>
+              </tr>
+              <tr>
+                <td><strong>Weight (lb)</strong></td>
+                <td><p class="result">
+                <span id="wlb">0</span> lb</p></td>
+              </tr>
+            </table>
+            <p>&nbsp;	</p>
+            </form>
+         </div>
+						<p>&nbsp;</p><!-- InstanceEndEditable -->
+  </div>

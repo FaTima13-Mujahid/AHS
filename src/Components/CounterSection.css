@@ -1,0 +1,24 @@
+.count-down-area {
+  padding-top: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.single-counter {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.plus {
+  font-size: 20px;
+}
+
+.color-green {
+  color: #2ecc71;
+}
