@@ -154,7 +154,11 @@ const SteelWeightCalculator = () => {
           </div>
         </div>
       )}
+      <br />
+      <br />
+      <br />
     </div>
+    
   );
 };
 

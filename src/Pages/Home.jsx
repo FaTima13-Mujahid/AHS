@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 // import EventCard from '../Components/EventCard'
-import img from "../img/gallery/section_bg01.png"
-import img2 from "../img/gallery/section_bg02.png"
+
 import Slider from '../Components/Slider'
 import ProductCard from "../Components/ProductCard"; // Importing the ProductCard component
 import Counter from "../Components/Counter"
