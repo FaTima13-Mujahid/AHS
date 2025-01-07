@@ -27,20 +27,38 @@ const About = () => {
           backgroundImage: 'url(https://www.shutterstock.com/image-photo/black-white-dark-gray-silver-600nw-2430513289.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '400px',  // Adjust the height here
+          height: '400px', // Adjust height as required
         }}
       >
         <div className="container">
-          <div className="row justify-content">
+          <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
               {/* Section Title */}
-              <div className="section-tittle text-center mb-80">
-                <h2>About Us</h2>
+              <div className="section-tittle text-center mb-80 text-white">
+                <h2
+                  style={{
+                    fontSize: "3rem", // Larger font size
+                    fontWeight: "700", // Bold font weight
+                    textTransform: "uppercase", // Make it all uppercase for emphasis
+                    letterSpacing: "2px", // Increase letter spacing for better readability
+                    textShadow: "2px 2px 6px rgba(0, 0, 0, 0.3)", // Soft text shadow for a clean effect
+                  }}
+                >
+                  About Us
+                </h2>
+                <p
+                  style={{
+                    fontSize: "1.2rem", // Adjusted for better readability
+                    color: "#f8f8f8", // Light color for contrast against the dark background
+                    fontWeight: "400", // Lighter weight for description text
+                    maxWidth: "600px", // Limit the width for the text block
+                    margin: "0 auto", // Center the paragraph
+                  }}
+                >
+                  Explore our premium quality steel products that cater to various construction and industrial needs.
+                </p>
               </div>
             </div>
-          </div>
-          <div className="row justify-content-center">
-            {/* Add content here */}
           </div>
         </div>
       </section>
