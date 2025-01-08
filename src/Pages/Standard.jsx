@@ -33,7 +33,7 @@ const MetalTable = () => {
     { size: "6x6x5/8", weight: "10.422" },
     { size: "7x7x5/8", weight: "11.956" },
     { size: "8x8x3/8", weight: "17.645" },
-  ];
+  ]; 
    const msflat = [
     { size: "4x1/8", weight: 0.895 },
     { size: "x3/16", weight: 0.144 },
