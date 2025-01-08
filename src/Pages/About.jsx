@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useState } from "react";
 import AboutBg from "../img/products/aboutbg.png"
 
 const About = () => {
+     useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top when this page loads
+      }, []);
     const [hovered, setHovered] = useState(false);
 
   const containerStyle = {

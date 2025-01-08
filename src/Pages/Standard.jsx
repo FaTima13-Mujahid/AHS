@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
 const MetalTable = () => {
-
+   useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to top when this page loads
+    }, []);
    const data = [
     { size: "3/4x3/4x1/8", weight: "0.263" },
     { size: "1x1x1/8", weight: "0.362" },
@@ -207,62 +209,28 @@ const MetalTable = () => {
               </tr>
             </thead>
             <tbody>
-              <tr><td>3/8"</td><td>0.526</td></tr>
-              <tr><td>1/2"</td><td>0.934</td></tr>
-              <tr><td>5/8"</td><td>1.461</td></tr>
-              <tr><td>3/4"</td><td>2.104</td></tr>
-              <tr><td>7/8"</td><td>2.865</td></tr>
+              <tr><td>ROUND 1/4</td><td>0.526</td></tr>
+              <tr><td>ROUND 3/8</td><td>0.934</td></tr>
+              <tr><td>ROUND 1/2</td><td>1.461</td></tr>
+              <tr><td>ROUND 5/8</td><td>2.104</td></tr>
+              <tr><td>ROUND 3/4</td><td>2.865</td></tr>
+              <tr><td>ROUND 7/8</td><td>2.865</td></tr>
+              <tr><td>ROUND1</td><td>2.865</td></tr>
+              <tr><td>ROUND </td><td>2.865</td></tr>
+              <tr><td>ROUND</td><td>2.865</td></tr>
+              <tr><td>ROUND</td><td>2.865</td></tr>
+
             </tbody>
           </table>
         </div>
       </div>
 
-      <div className="row">
-        {/* Table 7: T-BAR */}
-        <div className="col-md-6 mb-4">
-          <h4>T-BAR</h4>
-          <table className="table table-bordered">
-            <thead className="table-dark">
-              <tr>
-                <th>SIZE</th>
-                <th>wt, kg/ft</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1"x1/8"</td><td>0.471</td></tr>
-              <tr><td>1"x3/16"</td><td>0.707</td></tr>
-              <tr><td>1"x1/4"</td><td>0.944</td></tr>
-              <tr><td>1"x5/16"</td><td>1.181</td></tr>
-              <tr><td>1"x3/8"</td><td>1.418</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        {/* Table 8: Z-BAR */}
-        <div className="col-md-6 mb-4">
-          <h4>Z-BAR</h4>
-          <table className="table table-bordered">
-            <thead className="table-dark">
-              <tr>
-                <th>SIZE</th>
-                <th>wt, kg/ft</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>2"x2"x1/4"</td><td>1.234</td></tr>
-              <tr><td>3"x3"x1/4"</td><td>1.788</td></tr>
-              <tr><td>4"x4"x1/4"</td><td>2.344</td></tr>
-              <tr><td>5"x5"x1/4"</td><td>2.891</td></tr>
-              <tr><td>6"x6"x1/4"</td><td>3.445</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+     
 
       <div className="row">
         {/* Table 9: I-BEAM */}
         <div className="col-md-12 mb-4">
-          <h4>I-BEAM</h4>
+          <h4>MS H BEAM</h4>
           <table className="table table-bordered">
             <thead className="table-dark">
               <tr>
@@ -271,10 +239,11 @@ const MetalTable = () => {
               </tr>
             </thead>
             <tbody>
-              <tr><td>3"x1-1/2"</td><td>2.891</td></tr>
-              <tr><td>4"x2"</td><td>4.344</td></tr>
-              <tr><td>5"x2-1/2"</td><td>6.445</td></tr>
-              <tr><td>6"x3"</td><td>8.891</td></tr>
+              <tr><td>4x4</td><td>6.45</td></tr>
+              <tr><td>6X6</td><td>10.45</td></tr>
+              <tr><td>8X8</td><td>15.55</td></tr>
+              <tr><td>10X10</td><td>24.05</td></tr>
+                <tr><td>12X12</td><td>28.55</td></tr>
             </tbody>
           </table>
         </div>

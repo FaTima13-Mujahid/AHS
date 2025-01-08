@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from 'react';
 // import { useHistory } from "react-router-dom";  // Importing useHistory hook for navigation
 import ProductCard from "../Components/ProductCard"; // Importing the ProductCard component
 import BG from "../img/products/backgroung.jpg"
 
 
 const Product = () => {
-
+ useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when this page loads
+  }, []);
   const products = [
     {
       image:

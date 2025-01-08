@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 const SteelWeightCalculator = () => {
   const [material, setMaterial] = useState('0');
@@ -12,7 +12,9 @@ const SteelWeightCalculator = () => {
   const [weightKg, setWeightKg] = useState(0);
   const [weightLb, setWeightLb] = useState(0);
   const [error, setError] = useState(''); // State for error messages
-
+   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when this page loads
+  }, []);
   const densities = {
     '0': 7850, // Mild Steel (kg/m^3)
     '1': 7200, // Cast Iron

@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to top when this page loads
+    }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

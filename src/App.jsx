@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 // Import components
@@ -54,6 +54,11 @@ import MsChannel from './Pages/Products/MsChannel'
 // import ProductDetailsPage from "./Pages/Product"; // ProductDetailsPage Component
 
 const App = () => {
+    useEffect(() => {
+    // Scroll to top whenever the page or route changes
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

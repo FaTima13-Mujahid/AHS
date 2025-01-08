@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 // import EventCard from '../Components/EventCard'
 
 import Slider from '../Components/Slider'
 import ProductCard from "../Components/ProductCard"; // Importing the ProductCard component
 import Counter from "../Components/Counter"
-const Home = () => {
+const Home = () => {  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when this page loads
+  }, []);
+
   const products = [
     {
       image:
