@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SteelWeightCalculator = () => {
   const [material, setMaterial] = useState('0');
   const [shape, setShape] = useState('2');
-  const [width, setWidth] = useState('0');
-  const [depth, setDepth] = useState('0');
-  const [length, setLength] = useState('0');
+  const [width, setWidth] = useState('');
+  const [depth, setDepth] = useState('');
+  const [length, setLength] = useState('');
   const [unitW, setUnitW] = useState('mm');
   const [unitD, setUnitD] = useState('mm');
   const [unitL, setUnitL] = useState('mm');
   const [weightKg, setWeightKg] = useState(0);
   const [weightLb, setWeightLb] = useState(0);
+  const [error, setError] = useState(''); // State for error messages
 
   const densities = {
     '0': 7850, // Mild Steel (kg/m^3)
@@ -32,6 +32,20 @@ const SteelWeightCalculator = () => {
   };
 
   const calculate = () => {
+    // Validate inputs
+    if (!width || !depth || !length) {
+      setError('Please fill in all fields before calculating.');
+      return;
+    }
+
+    if (isNaN(width) || isNaN(depth) || isNaN(length)) {
+      setError('Please enter valid numeric values.');
+      return;
+    }
+
+    // Clear error if inputs are valid
+    setError('');
+
     const density = densities[material];
     const widthM = convertToMeters(parseFloat(width), unitW);
     const depthM = convertToMeters(parseFloat(depth), unitD);
@@ -49,31 +63,37 @@ const SteelWeightCalculator = () => {
     <div
       className="d-flex justify-content-center align-items-center"
       style={{
-        background: '#f5f5f5', // Light grey background
+        background: '#f5f5f5',
         fontFamily: 'Arial, sans-serif',
-        minHeight: '100vh', // Full height for page
-        paddingTop: '20px', // Padding from the top
-        paddingBottom: '20px', // Padding from the bottom
+        minHeight: '100vh',
+        paddingTop: '20px',
+        paddingBottom: '20px',
       }}
     >
       <div
         className="card p-5 shadow-lg rounded-4"
         style={{
           width: '100%',
-          maxWidth: '700px', // Card width
+          maxWidth: '700px',
           borderRadius: '16px',
           background: '#fff',
           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-          marginTop: '20px', // Space between the navbar
-          marginBottom: '20px', // Space between the footer
+          marginTop: '20px',
+          marginBottom: '20px',
         }}
       >
         <h1
-          className="text-center text-primary mb-5 font-weight-bold"
+          className="text-center mb-5 font-weight-bold"
           style={{ fontSize: '2.2rem' }}
         >
           Steel Weight Calculator
         </h1>
+
+        {error && (
+          <div className="alert alert-danger" role="alert">
+            {error}
+          </div>
+        )}
 
         <form>
           {/* Material selection */}
@@ -115,7 +135,7 @@ const SteelWeightCalculator = () => {
 
           {/* Width, Depth, Length Inputs */}
           <div className="row">
-            <div className="col-12 col-md-4 mb-4"> {/* Increased margin-bottom */}
+            <div className="col-12 col-md-4 mb-4">
               <label htmlFor="width" className="form-label text-dark">
                 Width
               </label>
@@ -143,7 +163,7 @@ const SteelWeightCalculator = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-4 mb-4"> {/* Increased margin-bottom */}
+            <div className="col-12 col-md-4 mb-4">
               <label htmlFor="depth" className="form-label text-dark">
                 Depth
               </label>
@@ -171,7 +191,7 @@ const SteelWeightCalculator = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-4 mb-4"> {/* Increased margin-bottom */}
+            <div className="col-12 col-md-4 mb-4">
               <label htmlFor="length" className="form-label text-dark">
                 Length
               </label>
@@ -237,25 +257,16 @@ const styles = {
     border: '1px solid #ddd',
     padding: '15px',
     fontSize: '16px',
-    height: '50px', // Increased height for better usability
-    marginRight: '10px', // Added spacing between input and unit selector
+    height: '50px',
   },
   selectInput: {
     borderRadius: '8px',
     border: '1px solid #ddd',
     padding: '15px',
-    marginTop: '10px',
     fontSize: '16px',
-    height: '50px', // Increased height for better usability
+    height: '50px',
   },
-  calculateButton: {
-    // backgroundColor: '#2196F3', // Blue background
-    // border: 'none',
-    // color: 'white',
-    // fontWeight: 'bold',
-    // fontSize: '18px',
-    // transition: 'background-color 0.3s ease',
-  },
+  calculateButton: {},
   resultBox: {
     padding: '20px',
     borderRadius: '8px',

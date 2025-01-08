@@ -1,13 +1,12 @@
 import React from 'react'
-
+import ProBg from "./proBg.jpg"
 const GalvanizedSheet = () => {
   return (
      <div>
       <section
         className="featured-job-area section-padding30 section-bg2"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/696644/pexels-photo-696644.jpeg?cs=srgb&dl=pexels-gabriel-peter-219375-696644.jpg&fm=jpg)',
-          backgroundSize: 'cover',
+        backgroundImage: `url(${ProBg})`,  backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '400px',  // Adjust the height here
         }}
