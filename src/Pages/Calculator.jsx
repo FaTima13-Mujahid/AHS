@@ -249,12 +249,12 @@ const styles = {
     height: '50px', // Increased height for better usability
   },
   calculateButton: {
-    backgroundColor: '#2196F3', // Blue background
-    border: 'none',
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: '18px',
-    transition: 'background-color 0.3s ease',
+    // backgroundColor: '#2196F3', // Blue background
+    // border: 'none',
+    // color: 'white',
+    // fontWeight: 'bold',
+    // fontSize: '18px',
+    // transition: 'background-color 0.3s ease',
   },
   resultBox: {
     padding: '20px',
