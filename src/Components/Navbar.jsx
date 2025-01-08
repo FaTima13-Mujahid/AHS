@@ -1,13 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { NavLink } from "react-router-dom";  // Import NavLink instead of Link
+import { NavLink } from "react-router-dom";
 import logo from "../img/logo/logo.jpeg";
 
 const Navbar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/contact');  // This will redirect to the Contact page
+  const closeNavbar = () => {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      navbarToggler.click(); // Programmatically toggle the navbar
+    }
   };
 
   return (
@@ -17,12 +21,12 @@ const Navbar = () => {
         color: "#fff", // Font color
       }}>
         {/* Logo */}
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
           <img
-            src={logo} // Replace 'logo' with your actual logo import
+            src={logo}
             alt="Logo"
             style={{
-              width: "150px", // Adjust logo size if needed
+              width: "150px",
               height: "auto",
             }}
           />
@@ -42,13 +46,13 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav" style={{ marginRight: "auto", marginLeft: "auto" }}>
-            {/* Use NavLink instead of Link */}
             <NavLink
               className="nav-item nav-link"
               to="/"
+              onClick={closeNavbar} // Close navbar on click
               style={({ isActive }) => ({
                 marginRight: "20px",
-                color: isActive ? "white" : "", // Active link color set to white
+                color: isActive ? "white" : "",
               })}
             >
               Home
@@ -57,6 +61,7 @@ const Navbar = () => {
             <NavLink
               className="nav-item nav-link"
               to="/product"
+              onClick={closeNavbar} // Close navbar on click
               style={({ isActive }) => ({
                 marginRight: "20px",
                 color: isActive ? "white" : "",
@@ -68,6 +73,7 @@ const Navbar = () => {
             <NavLink
               className="nav-item nav-link"
               to="/standard"
+              onClick={closeNavbar} // Close navbar on click
               style={({ isActive }) => ({
                 marginRight: "20px",
                 color: isActive ? "white" : "",
@@ -79,6 +85,7 @@ const Navbar = () => {
             <NavLink
               className="nav-item nav-link"
               to="/calculator"
+              onClick={closeNavbar} // Close navbar on click
               style={({ isActive }) => ({
                 marginRight: "20px",
                 color: isActive ? "white" : "",
@@ -90,6 +97,7 @@ const Navbar = () => {
             <NavLink
               className="nav-item nav-link"
               to="/about"
+              onClick={closeNavbar} // Close navbar on click
               style={({ isActive }) => ({
                 marginRight: "20px",
                 color: isActive ? "white" : "",
@@ -102,12 +110,20 @@ const Navbar = () => {
           {/* Add Button at the end */}
           <button
             className="btn btn-primary"
-            onClick={handleClick}  // Trigger the navigation on button click
+            onClick={() => {
+              navigate('/contact');
+              closeNavbar(); // Close navbar on button click
+            }}
             style={{
-              padding: "10px 20px", 
-              backgroundColor: "#444", 
-              color: "#fff", 
+              padding: "18px 36px",
+              backgroundColor: "#444",
+              color: "#fff",
               borderRadius: "5px",
+              fontSize: "20px",
+              fontWeight: "bold",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
+              border: "none",
+              cursor: "pointer",
             }}
           >
             Contact Us

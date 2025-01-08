@@ -40,7 +40,7 @@ const Footer = () => {
                       <ul>
                         <li>
                           <p>
-                            Address: 4, CP & Berar Society BMCHS Sharafabad, Karachi, Karachi City, Sindh, Pakistan
+                          Plot 15/90, Block-3, BMCHS, Near Ali Masjid, Karachi, Sindh, Pakistan.
                           </p>
                         </li>
                         <li>

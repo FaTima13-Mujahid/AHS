@@ -88,7 +88,7 @@ const About = () => {
 </p>
 
               </div>
-              <a href="about.html" className="btn">
+              <a href="/About" className="btn">
                 About US
               </a>
             </div>
