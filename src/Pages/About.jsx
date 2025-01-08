@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import AboutBg from "../img/products/aboutbg.png"
 
 const About = () => {
     const [hovered, setHovered] = useState(false);
@@ -24,8 +25,8 @@ const About = () => {
       <section
         className="featured-job-area section-padding30 section-bg2"
         style={{
-          backgroundImage: 'url(https://www.shutterstock.com/image-photo/black-white-dark-gray-silver-600nw-2430513289.jpg)',
-          backgroundSize: 'cover',
+          backgroundImage: `url(${AboutBg})`,
+           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '400px', // Adjust height as required
         }}
