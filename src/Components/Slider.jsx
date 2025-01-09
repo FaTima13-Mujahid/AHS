@@ -9,20 +9,18 @@ const CustomSlider = () => {
   // Array of image data
   const images = [
     {
-      url: "https://plus.unsplash.com/premium_photo-1661963247622-be10e1ea2c25?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: require("../img/gallery/homee.jpg"),
       title: "The Backbone of Industry, The Heart of Innovation.",
-      subtitle: "Effortlessly manage and store your data with MongoDB Atlas",
     },
     {
       url: "https://media.istockphoto.com/id/1390249924/photo/industrial-plant-for-the-production-of-sheet-metal-in-a-steel-mill-storage-of-sheet-rolls.jpg?s=612x612&w=0&k=20&c=9g5S8FB15_JvdCzRFDhzamHSd7pjz_0lTBCl4L66TGM=",
       title: "Secure and Simple Data Management",
-      subtitle: "Manage your data with ease, with full control over security and scalability.",
     },
     {
       url: "https://media.istockphoto.com/id/1344231216/photo/rolled-metal-warehouse-many-packs-of-metal-bars-on-the-shelves.jpg?s=612x612&w=0&k=20&c=NdBJpn98jT43UXxRMv-R1gVwynBq-2nQGmJVLx4bCxc=",
       title: "The Perfect Solution for Your Data Needs",
-      subtitle: "Get started with secure, fast, and reliable data solutions.",
     },
+    
   ];
 
   // Function to go to the next slide

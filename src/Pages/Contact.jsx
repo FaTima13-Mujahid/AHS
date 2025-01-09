@@ -38,7 +38,7 @@ const Contact = () => {
 
   const openLocation = () => {
     // Open Google Maps with the Plus Code location
-    window.open("https://www.google.com/maps?q=V3M7+4V2+BMCHS+Sharafabad,+Karachi", "_blank");
+    window.open("https://maps.app.goo.gl/BxH4W6VsmunstP1s7", "_blank");
   };
 
   return (
