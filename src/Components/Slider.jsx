@@ -10,15 +10,16 @@ const CustomSlider = () => {
   const images = [
     {
       url: require("../img/gallery/homee.jpg"),
+     
       title: "The Backbone of Industry, The Heart of Innovation.",
     },
     {
       url: "https://media.istockphoto.com/id/1390249924/photo/industrial-plant-for-the-production-of-sheet-metal-in-a-steel-mill-storage-of-sheet-rolls.jpg?s=612x612&w=0&k=20&c=9g5S8FB15_JvdCzRFDhzamHSd7pjz_0lTBCl4L66TGM=",
-      title: "Secure and Simple Data Management",
+      title: "Strength in Every Steel Beam",
     },
     {
       url: "https://media.istockphoto.com/id/1344231216/photo/rolled-metal-warehouse-many-packs-of-metal-bars-on-the-shelves.jpg?s=612x612&w=0&k=20&c=NdBJpn98jT43UXxRMv-R1gVwynBq-2nQGmJVLx4bCxc=",
-      title: "The Perfect Solution for Your Data Needs",
+      title: "Quality Steel for Every Need",
     },
     
   ];
