@@ -226,7 +226,7 @@ const SteelWeightCalculator = () => {
           <div className="d-grid gap-2 mb-5" style={{ marginTop: '30px' }}>
             <button
               type="button"
-              className="btn btn-primary btn-lg"
+              className="btn btn-lg"
               onClick={calculate}
               style={styles.calculateButton}
             >

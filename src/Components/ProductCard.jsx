@@ -26,7 +26,7 @@ const ProductCard = ({ image, title, description, links }) => {
             <a href="#">{title}</a>
           </h3>
           <p>{description.slice(0, 100)}...</p> {/* Show preview of the description */}
-          <button className="btn btn-primary mt-3" onClick={handleReadMore}>
+          <button className="btn mt-3" onClick={handleReadMore}>
             Read More
           </button>
         </div>

@@ -39,14 +39,27 @@ const MetalTable = () => {
 
   return (
     <div className="container mt-4">
-      <h2 className="text-center mb-4">Metal Weight Chart</h2>
+      <br />
+     
+       <br />
+      <br />
+      <br />
+      <h1 style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '3.5rem' }}>
+  Metal Weight Chart
+</h1>
+ <br />
+      <br />
+      <br />
 
       {/* Tables Section */}
       <div className="row">
         {/* Table 1: MS ANGLES */}
         <div className="col-md-6 mb-4">
-          <h4>MS ANGLES</h4>
-          <table className="table table-bordered">
+         <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>
+  MS ANGLES
+</h4>
+
+          <table className="table table-bordered text-center">
             <thead className="table-dark">
               <tr>
                 <th>SIZE</th>
@@ -66,8 +79,8 @@ const MetalTable = () => {
 
         {/* Table 2: MS FLAT / STRIP */}
        <div class="col-md-6 mb-4">
-  <h4>MS FLAT / STRIP</h4>
-  <table class="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS FLAT / STRIP</h4>
+  <table class="table table-bordered text-center">
     <thead class="table-dark">
       <tr>
         <th>SIZE</th>
@@ -113,8 +126,8 @@ const MetalTable = () => {
       <div className="row">
         {/* Table 3: MS PLATE / SHEET */}
       <div class="col-md-6 mb-4">
-  <h4>MS PLATE / SHEET  DONE</h4>
-  <table class="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS PLATE / SHEET  DONE</h4>
+  <table class="table table-bordered text-center">
     <thead class="table-dark">
       <tr>
         <th>SIZE</th>
@@ -157,8 +170,8 @@ const MetalTable = () => {
 
         {/* Table 4: MS CHANNEL */}
        <div className="col-md-6 mb-4">
-  <h4>MS CHANNEL</h4>
-  <table className="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS CHANNEL</h4>
+  <table className="table table-borderedtext-center">
     <thead className="table-dark">
       <tr>
         <th>SIZE</th>
@@ -188,8 +201,8 @@ const MetalTable = () => {
       <div className="row">
         {/* Table 5: MS SQUARE BAR */}
         <div className="col-md-6 mb-4">
-          <h4>MS ROUND BAR</h4>
-          <table className="table table-bordered">
+          <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS ROUND BAR</h4>
+          <table className="table table-bordered text-center">
             <thead className="table-dark">
               <tr>
                 <th>SIZE</th>
@@ -220,8 +233,8 @@ const MetalTable = () => {
 
         {/* Table 6: MS ROUND BAR */}
        <div className="col-md-6 mb-4">
-  <h4>MS SQUARE BAR</h4>
-  <table className="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS SQUARE BAR</h4>
+  <table className="table table-bordered text-center">
     <thead className="table-dark">
       <tr>
         <th>SIZE</th>
@@ -244,8 +257,8 @@ const MetalTable = () => {
   </table>
 </div>
 <div className="col-md-6 mb-4">
-  <h4>MS TEE BAR</h4>
-  <table className="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS TEE BAR</h4>
+  <table className="table table-bordered text-center">
     <thead className="table-dark">
       <tr>
         <th>SIZE</th>
@@ -270,8 +283,8 @@ const MetalTable = () => {
       <div className="row">
         {/* Table 9: I-BEAM */}
         <div className="col-md-6 mb-4">
-          <h4>MS H BEAM</h4>
-          <table className="table table-bordered">
+          <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS H BEAM</h4>
+          <table className="table table-bordered text-center">
             <thead className="table-dark">
               <tr>
                 <th>SIZE</th>
@@ -288,8 +301,8 @@ const MetalTable = () => {
           </table>
         </div>
         <div class="col-md-6 mb-4">
-  <h4>MS I BEAM</h4>
-  <table class="table table-bordered">
+  <h4 style={{ textAlign: 'center', fontSize: '2.1rem', color: '', fontWeight: 'bold', marginTop: '1rem' }}>MS I BEAM</h4>
+  <table class="table table-bordered text-center">
     <thead class="table-dark">
       <tr>
         <th>SIZE</th>
