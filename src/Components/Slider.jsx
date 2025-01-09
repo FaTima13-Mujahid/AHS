@@ -9,7 +9,7 @@ const CustomSlider = () => {
   // Array of image data
   const images = [
     {
-      url: require("../img/gallery/homee.jpg"),
+      url: require("../img/gallery/warehouse.jpg"),
      
       title: "The Backbone of Industry, The Heart of Innovation.",
     },
