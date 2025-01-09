@@ -1,6 +1,11 @@
+import React, { useEffect } from 'react';
 import ProBg from "./proBg.jpg"
 const BoilerPlates = () => {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when this page loads
+  }, []);
   return (
+
     <div>
       <section
         className="featured-job-area section-padding30 section-bg2"

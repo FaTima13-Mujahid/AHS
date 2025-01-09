@@ -1,5 +1,9 @@
+import React, { useEffect } from 'react';
 import ProBg from "./proBg.jpg"
 const Chequeredplates = () => {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when this page loads
+  }, []);
   return (
     <div>
       <section
