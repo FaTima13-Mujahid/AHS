@@ -8,7 +8,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    contact: '',
     message: '',
   });
 
@@ -133,12 +133,12 @@ const Contact = () => {
                     <div className="form-group">
                       <input
                         className="form-control"
-                        name="subject"
-                        id="subject"
-                        type="text"
-                        value={formData.subject}
+                        name="contact"
+                        id="contact"
+                        type="number"
+                        value={formData.contact}
                         onChange={handleChange}
-                        placeholder="Enter Subject"
+                        placeholder="Enter Contact"
                       />
                     </div>
                   </div>
