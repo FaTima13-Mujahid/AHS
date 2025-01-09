@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when this page loads
-  }, []);
-
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to top when this page loads
+    }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,27 +23,15 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation to ensure no fields are empty
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      alert('All fields are required!');
-      return;
-    }
-
     // EmailJS Function to send email
     emailjs
-      .sendForm(
-        'service_ca4bj9m', // Service ID
-        'template_0e0flcw', // Template ID
-        e.target, // Form element
-        'Qs3rDdFVTcYAp1BRM' // Public Key
-      )
+      .sendForm('service_3mt2twa', 'your_template_id', e.target, 'your_user_id')
       .then(
         (result) => {
-          alert('Message Sent Successfully!');
-          setFormData({ name: '', email: '', subject: '', message: '' }); // Reset form
+          alert('Message Sent Successfully');
         },
         (error) => {
-          alert(`Error sending message: ${error.text}`);
+          alert('Error sending message: ', error.text);
         }
       );
   };
@@ -56,35 +43,45 @@ const Contact = () => {
 
   return (
     <main>
-      {/* Hero Section */}
+     {/* Hero Section */}
       <section
         className="featured-job-area section-padding30 section-bg2"
         style={{
-          backgroundImage:
-            'url(https://www.shadeout.pk/cdn/shop/files/ad.png?v=1711129861&width=1500)',
+          backgroundImage: 'url(https://www.shadeout.pk/cdn/shop/files/ad.png?v=1711129861&width=1500)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '400px',
+          height: '400px',  // Adjust the height here
         }}
       >
         <div className="container">
           <div className="row justify-content">
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+              {/* Section Title */}
               <div className="section-tittle text-center mb-80">
                 <h2>Contact Us</h2>
               </div>
             </div>
           </div>
+          <div className="row justify-content-center">
+            {/* Add content here */}
+          </div>
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Services Section */}
+
       <section className="contact-section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-2"></div>
+            <div className="col-12">
+             
+            </div>
+
+             <div className="col-lg-2">
+              
+             </div>
             <div className="col-lg-8">
-              <h2 className="contact-title">Get in Touch</h2>
+               <h2 className="contact-title">Get in Touch</h2>
               <form
                 className="form-contact contact_form"
                 onSubmit={handleSubmit}
@@ -153,7 +150,61 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-            <div className="col-lg-2"></div>
+             <div className="col-lg-2"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Card Section Above the Map with vol04 style */}
+      <section className="map-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-4">
+              {/* <h3>Our Fixed Location</h3> */}
+
+              <div className="card" style={{
+                  position: 'absolute',
+                  top: '100px',
+                  left: '10%',
+                  backgroundColor: "rgba(67, 39, 39,2)",
+                  zIndex: 1,
+                  backgroundColor: 'white',
+                  color: '#fff',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                  width: 'auto',
+                }}>
+                <p>Click below to view our location on Google Maps</p>
+             
+               <p style={{ marginTop: '10px', display: 'flex', alignItems: 'center' }}>
+    <span style={{ marginRight: '8px', fontSize: '18px', color: '#007bff' }}>
+      📍 {/* Replace with an icon library like Font Awesome if needed */}
+
+    </span>
+    4, CP & Berar Society BMCHS Sharafabad, Karachi, Karachi City, Sindh, Pakistan
+  </p>
+                   <button 
+                 className="btn btn-light"
+                  // style={{ backgroundColor: 'white', color: 'blue', border: '1px solid white', padding: '10px 20px', borderRadius: '5px' }}
+                  onClick={openLocation}
+                >
+                  Get Directions
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Map iFrame */}
+          <div className="row">
+            <div className="col-12">
+              <div className="map-responsive" style={{ position: 'relative', marginTop: '20px' }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.278239749484!2d74.38097301512953!3d31.56047877623143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919046a1b56d189%3A0x218eeb0f9885193d!2sNagan%20Chowrangi!5e0!3m2!1sen!2sin!4v1672535760927!5m2!1sen!2sin"
+                  width="100%" height="450" style={{ border: 0 }} allowFullScreen="" aria-hidden="false" tabIndex="0"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
