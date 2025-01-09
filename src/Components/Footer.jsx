@@ -97,10 +97,10 @@ const Footer = () => {
 
               {/* Social Media Icons */}
               <div className="footer-social-icons" style={{ marginTop: "30px", textAlign: "center" }}>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "15px" }}>
-                  <i className="fab fa-facebook" style={{ fontSize: "24px", color: "#fff" }}></i>
+                <a href="https://www.linkedin.com/company/alhadeedsteel/" target="_blank" rel="noopener noreferrer" style={{ marginRight: "15px" }}>
+                  <i className="fab fa-linkedin" style={{ fontSize: "24px", color: "#fff" }}></i>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "15px" }}>
+                <a href="https://www.instagram.com/alhadeedsteel?igsh=MWlscmx1dnJqOWI0bA==" target="_blank" rel="noopener noreferrer" style={{ marginRight: "15px" }}>
                   <i className="fab fa-instagram" style={{ fontSize: "24px", color: "#fff" }}></i>
                 </a>
               </div>
