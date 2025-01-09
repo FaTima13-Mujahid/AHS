@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ProBg from "./proBg.jpg"
 const msplates = () => {
-   useEffect(() => {
-     window.scrollTo(0, 0); // Scroll to top when this page loads
-   }, []);
+ 
   return (
     <div>
       <section
