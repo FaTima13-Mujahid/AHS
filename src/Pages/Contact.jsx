@@ -22,7 +22,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  const { name, email, contact, message } = formData;
+  if (!name || !email || !contact || !message) {
+    alert("Please fill out all fields before submitting.");
+    return;
+  }
     // EmailJS Function to send email
     emailjs
       .sendForm('service_3mt2twa', 'your_template_id', e.target, 'your_user_id')
