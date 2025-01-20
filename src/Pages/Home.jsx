@@ -79,6 +79,9 @@ const Home = () => {  useEffect(() => {
                 {/* <!--? Count Down Start --> */}
                <Counter/>
                 {/* <!-- Count Down End --> */}
+                <br />
+                <br />
+                <br />
             </main>
         </>
     )

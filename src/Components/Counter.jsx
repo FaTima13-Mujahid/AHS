@@ -13,7 +13,7 @@ const CounterSection = () => {
   };
 
   return (
-    <div className="count-down-area pt-25 section-bg" style={{ backgroundImage: `url('/assets/img/gallery/section_bg02.png')` }}>
+    <div className="count-down-area pt-25 section-bg" style={{ backgroundImage: `url('/assets/img/gallery/parallax_03.jpg')` }}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 col-md-12">
