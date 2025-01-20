@@ -61,8 +61,28 @@ const Contact = () => {
           <div className="row justify-content">
             <div className="col-xl-7 col-lg-9 col-md-10 col-sm-12">
               {/* Section Title */}
-              <div className="section-tittle text-center mb-80">
-                <h2>Contact Us</h2>
+              <div className="section-tittle text-center mb-80 text-white">
+                <h2
+                  style={{
+                    fontSize: "3rem", // Larger font size
+                    fontWeight: "700", // Bold font weight
+                    textTransform: "uppercase", // Make it all uppercase for emphasis
+                    letterSpacing: "2px", // Increase letter spacing for better readability
+                    textShadow: "2px 2px 6px rgba(196, 186, 186, 0.3)", // Soft text shadow for a clean effect
+                  }}
+                >
+                  Contact Us
+                </h2>
+                <p
+                  style={{
+                    fontSize: "1.2rem", // Adjusted for better readability
+                    color: "#f8f8f8", // Light color for contrast against the dark background
+                    fontWeight: "400", // Lighter weight for description text
+                    maxWidth: "600px", // Limit the width for the text block
+                    margin: "0 auto", // Center the paragraph
+                  }}
+                >
+                 Get in touch with us to learn more about our premium quality steel products and services. </p>
               </div>
             </div>
           </div>
@@ -172,7 +192,7 @@ const Contact = () => {
                   left: '10%',
                   backgroundColor: "rgba(67, 39, 39,2)",
                   zIndex: 1,
-                  backgroundColor: 'white',
+                  // backgroundColor: 'white',
                   color: '#fff',
                   padding: '20px',
                   borderRadius: '8px',
