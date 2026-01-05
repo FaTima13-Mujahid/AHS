@@ -2,28 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.alhadeedsteel.pk/</loc>
-    <priority>1.0</priority>
+    <loc>https://alhadeedsteel.pk/</loc>
   </url>
 
   <url>
-    <loc>https://www.alhadeedsteel.pk/about</loc>
-    <priority>0.8</priority>
+    <loc>https://alhadeedsteel.pk/about</loc>
   </url>
 
   <url>
-    <loc>https://www.alhadeedsteel.pk/products</loc>
-    <priority>0.9</priority>
+    <loc>https://alhadeedsteel.pk/products</loc>
   </url>
 
   <url>
-    <loc>https://www.alhadeedsteel.pk/services</loc>
-    <priority>0.8</priority>
+    <loc>https://alhadeedsteel.pk/services</loc>
   </url>
 
   <url>
-    <loc>https://www.alhadeedsteel.pk/contact</loc>
-    <priority>0.7</priority>
+    <loc>https://alhadeedsteel.pk/contact</loc>
   </url>
 
 </urlset>
