@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 // import EventCard from '../Components/EventCard'
+import { Helmet } from "react-helmet-async";
 
 import Slider from '../Components/Slider'
 import ProductCard from "../Components/ProductCard"; // Importing the ProductCard component
@@ -41,7 +42,16 @@ const Home = () => {  useEffect(() => {
     
   ];
     return (
-        <>            {/* background-image:url(../img/hero/hero_arrow.png) */}
+        <>        
+            <Helmet>
+      <title>Al Hadeed Steel – Steel Manufacturer in Pakistan</title>
+      <meta
+        name="description"
+        content="Al Hadeed Steel is a trusted steel manufacturer and supplier in Pakistan, providing high-quality steel products nationwide."
+      />
+    </Helmet>
+        
+            {/* background-image:url(../img/hero/hero_arrow.png) */}
             <main>
                 {/* <!-- slider Area Start--> */}
                <Slider/>
